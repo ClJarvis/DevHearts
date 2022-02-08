@@ -3,6 +3,9 @@
 <title>Dev Hearts</title>
 
 <link rel="stylesheet" href="hearts.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Charm:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -12,53 +15,23 @@
 <h1 id="welcome">"Dev Heart Messages"</h1>
 	<div class="login-screen" >
 		<h1>"Hello World"</h1>
-		Click the button for random candy heart message.
-<!-- animate drop in text BOOKS 
-	<div class="outer">
-		<div class="booktext" data-text="BOOKS!">BOOKS!</div>
-		<span class="gradient"></span>
-		<span class="spotlight"></span>
-	</div>
-
--->
-
-	<div class="quote-screen " id="heart">
-		<!-- Quote displays Here -->
-	</div>
+		Click the button for .random(♥) candy heart message.
 
 <P></P>
 <input type="submit" value="click for message." class="btn btn-primary btn-large btn-block" id="submit" onclick="sweetHeartMsg();">
 	</div>
 	<div height='20px'>
 	</div>
+<div class="bigheart">
 
+		<!-- Quote displays Here -->
+	</div>
+	<div class="quote-screen " id="heart">
+</div>
 
-
-<script>
-	var quotes = [
-	"\"Will you be my variable?\" ",
-	"\"Books are a uniquely portable magic.\" \<b><sub>– Stephen King\</sub></b>",
-	"\“Reading is to the mind what exercise is to the body.\" \<b><sub>– Richard Steele\</sub></b>",
-	"\“Reading is a discount ticket to everywhere.\"  \<b><sub>– Mary Schmich\</sub></b>",
-	"\“Once you learn to read, you will be forever free\"  \<b><sub>– Frederick Douglass\</sub></b>",
-	"\"Today a reader, tomorrow a leader.\" \<b><sub>– Margaret Fuller\</sub></b>",
-	"\“There is more treasure in books than in all the pirate’s loot on Treasure Island.\” \<b><sub>– Walt Disney\</sub></b>",
-	"\“You can find magic wherever you look.  Sit back and relax all you need is a book!\" \<b><sub>– Dr. Seuss\</sub></b>",
-	"\"If you are going to get anywhere in life you have to read a lot of books.\" \<b><sub>– Roald Dahl\</sub></b>",
-	"\"No entertainment is so cheap as reading, nor any pleasure so lasting.\" \<b><sub>— Lady Montagu\</sub></b>"
-
-]
-
-
-function sweetHeartMsg() {
-	var randomNumber = Math.floor(Math.random() * (quotes.length));
-	document.getElementById('heart').innerHTML = quotes[randomNumber];
-	heart.style.display = "block";
-	
-
-}
-</script>
 
 	</div>
+<script src="heartsMsg.js"></script>
+
 </body>
 </html>

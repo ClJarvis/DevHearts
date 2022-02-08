@@ -15,7 +15,7 @@ outline: none;
 }
 
 body {
-font-family: Arial;
+font-family: 'Charm', cursive;
 background-color: var(--accent-red);;
 padding: 50px;
 }
@@ -28,18 +28,21 @@ background-color: #FFF;
 padding: 20px;
 border-radius: 5px;
 border:inset 6px black;
+width: 25%;
 }
 
 .quote-screen {
-background-color: var(--heart-red);
+
 color: white;
-font-size: 1.25em;
-padding: 20px;
-border-radius: 50%;
-border: 6px solid white;
-margin-top: 20px;
+font-size: 2.25em;
+font-weight: lighter;
+margin-top: -345px;
+margin-left: 255px;
 display: none;
 text-align: center;	
+position: relative;
+
+
 }
 
 
@@ -49,29 +52,6 @@ text-align: center;
 color: #4a1167;
 }
 
-.login-form {
-text-align: center;
-}
-.control-group {
-margin-bottom: 10px;
-}
-
-input {
-text-align: center;
-background-color: #ECF0F1;
-border: 2px solid transparent;
-border-radius: 3px;
-font-size: 16px;
-font-weight: 200;
-padding: 10px 0;
-width: 250px;
-transition: border .5s;
-}
-
-input:focus {
-border: 2px solid #3498DB;
-box-shadow: none;
-}
 
 .btn {
 border: 2px solid transparent;
@@ -102,9 +82,6 @@ display: block;
 margin-top: 12px;
 }
 
-.alert, .alert-warning, .alert-dismissible {
-	background: #f06c30;
-}
 
 .logout {
 	background: #f06c30;
@@ -133,5 +110,46 @@ margin-top: 12px;
 	color: white;
 }
 
+.bigheart {
+	position: relative;
+	background-color: var(--heart-red);
+	width: 400px;
+	height: 400px;
+	margin-left: 550px;
+	margin-top: -210px;
+	filter: drop-shadow(0 0 0.75rem black);
+}
 
+.bigheart:before, .bigheart:after {
+	position: absolute;
+	background-color: var(--heart-red);
+	width: 400px;
+	height: 400px;
+	content: '';
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.bigheart:before {
+	bottom: 0;
+	left: -200;
+}
+
+.bigheart:after {
+	top: -200px;
+	right: 0;
+}
+
+.bigheart {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+
+/* https://www.csscolorpalettes.com/palettes/225 */
 
