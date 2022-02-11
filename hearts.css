@@ -10,29 +10,22 @@
 box-sizing: border-box;
 }
 
-*:focus {
-outline: none;
-}
 
 body {
 font-family: 'Charm', cursive;
 background-color: var(--accent-red);;
 padding: 50px;
 }
-.login {
-margin: 20px auto;
-width: 300px;
-}
+
 .login-screen {
 background-color: #FFF;
 padding: 20px;
 border-radius: 5px;
-border:inset 6px black;
+border:inset 6px var(--orange);
 width: 25%;
 }
 
 .quote-screen {
-
 color: white;
 font-size: 2.25em;
 font-weight: lighter;
@@ -41,15 +34,6 @@ margin-left: 255px;
 display: none;
 text-align: center;	
 position: relative;
-
-
-}
-
-
-
-.app-title {
-text-align: center;
-color: #4a1167;
 }
 
 
@@ -75,32 +59,7 @@ margin: 0 auto;
 background-color: var(--accent-red);
 }
 
-.login-link {
-font-size: 12px;
-color: #444;
-display: block;
-margin-top: 12px;
-}
 
-
-.logout {
-	background: #f06c30;
-    padding: 4px 20px;
-    border: solid 2px #000;
-    border-radius: 10px;
-    color: #fff;
-}
-
-.instruction  li {
-	list-style-type: none;
-	align-items: center;
-	text-align: left;
-	border: solid 2px #4d42a5;
-}
-
-.checkbox {
-	width: 	15px;
-}
 
 .showPass {
 	margin-left: -240px;
@@ -120,6 +79,7 @@ margin-top: 12px;
 	filter: drop-shadow(0 0 0.75rem black);
 }
 
+/* The circles */
 .bigheart:before, .bigheart:after {
 	position: absolute;
 	background-color: var(--heart-red);
@@ -132,6 +92,7 @@ margin-top: 12px;
 	border-radius: 50%;
 }
 
+/* moving the circles */
 .bigheart:before {
 	bottom: 0;
 	left: -200;
@@ -141,6 +102,8 @@ margin-top: 12px;
 	top: -200px;
 	right: 0;
 }
+
+/*Rotate the whole thing */
 
 .bigheart {
 	-webkit-transform: rotate(45deg);
