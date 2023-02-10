@@ -1,0 +1,131 @@
+ :root {
+	--heart-red: #cc0500;
+	--accent-red: #ef2f2a;
+	--orange: #ef832a;
+	--yellow: #efac2a;
+	--purple: darkorchid;
+}
+
+
+* {
+box-sizing: border-box;
+}
+
+
+body {
+font-family: 'Charm', cursive;
+background-color: var(--purple);
+padding: 50px;
+}
+
+.login-screen {
+background-color: #FFF;
+padding: 20px;
+border-radius: 5px;
+border:inset 6px var(--orange);
+width: 25%;
+}
+
+.quote-screen {
+color: white;
+font-size: 2.25em;
+font-weight: lighter;
+margin-top: -345px;
+margin-left: 255px;
+display: none;
+text-align: center;	
+position: relative;
+}
+
+
+.btn {
+border: 2px solid transparent;
+background: var(--yellow);
+color: #fff;
+font-size: 16px;
+font-weight: bolder;
+line-height: 25px;
+padding: 10px 0;
+text-decoration: none;
+text-shadow: none;
+border-radius: 3px;
+box-shadow: none;
+transition: 0.25s;
+display: block;
+width: 250px;
+margin: 0 auto;
+}
+
+.btn:hover {
+background-color: var(--accent-red);
+}
+
+.input {
+	width: 50px;
+}
+
+.showPass {
+	margin-left: -240px;
+}
+
+#welcome {
+	color: white;
+}
+
+.bigheart {
+	position: relative;
+	background-color: var(--heart-red);
+	width: 400px;
+	height: 400px;
+	margin-left: 550px;
+	margin-top: -110px;
+	filter: drop-shadow(0 0 0.75rem black);
+}
+
+/* The circles */
+.bigheart:before, .bigheart:after {
+	position: absolute;
+	background-color: var(--heart-red);
+	width: 400px;
+	height: 400px;
+	content: '';
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+
+/* moving the circles */
+.bigheart:before {
+	bottom: 0;
+	left: -200;
+}
+
+.bigheart:after {
+	top: -200px;
+	right: 0;
+}
+
+/*Rotate the whole thing */
+
+.bigheart {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+#heart {
+color: white;
+font-size: 2.25em;
+font-weight: lighter;
+margin-top: -345px;
+margin-left: 255px;
+text-align: center;	
+position: relative;
+	display: block;
+}
+
+/* https://www.csscolorpalettes.com/palettes/225 */
+
