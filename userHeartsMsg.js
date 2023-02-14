@@ -6,4 +6,3 @@ input.addEventListener('input', userMessage);
 function userMessage(e) {
   enteredInput.textContent = e.target.value;
 }
-
