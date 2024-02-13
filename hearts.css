@@ -114,5 +114,21 @@ background-color: var(--accent-red);
 }
 
 
+/* Animate the colors */
+.bigheart, .bigheart:before, .bigheart:after {
+	animation: ColorChange 10s infinite;
+}
+
+@keyframes ColorChange {
+	0%, 100% {
+		background-color: var(--heart-red);
+	}
+
+	50% {
+		background-color: var(--orange);
+	}
+}
+
+
 /* https://www.csscolorpalettes.com/palettes/225 */
 
