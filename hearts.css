@@ -125,6 +125,10 @@ background-color: var(--accent-red);
 	}
 
 	50% {
+		background-color: var(--yellow);
+	}
+
+	66% {
 		background-color: var(--orange);
 	}
 }
