@@ -3,6 +3,7 @@
 	--accent-red: #ef2f2a;
 	--orange: #ef832a;
 	--yellow: #efac2a;
+	--purple: darkorchid;
 }
 
 
@@ -95,7 +96,7 @@ background-color: var(--accent-red);
 /* moving the circles */
 .bigheart:before {
 	bottom: 0;
-	left: -200;
+	left: -200px;
 }
 
 .bigheart:after {
